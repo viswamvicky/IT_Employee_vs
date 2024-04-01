@@ -1,0 +1,30 @@
+### Getting the Employee details
+GET http://localhost:4004/EmployeeSRV/Employee HTTP/1.1
+
+### Create Employee
+POST http://localhost:4004/EmployeeSRV/Employee HTTP/1.1
+Content-Type: application/json
+
+    {
+      "fName": "Chiranjivi",
+      "lName": "Seshadri",
+      "gender": "Male",
+      "DOB": "1990-02-01",
+      "contractStarted": "2012-03-11",
+      "email": "ChiranjiviSeshadri1@abc.com",
+      "phone": "8564543279"
+    }
+
+### Get Employee Along With Address
+GET http://localhost:4004/EmployeeSRV/Employee?$expand=address HTTP/1.1
+
+
+### Get Pagination
+GET http://localhost:4004/EmployeeSRV/Employee?$expand=address&$top=20&$skip=10 HTTP/1.1
+
+
+### Get Filter
+GET http://localhost:4004/EmployeeSRV/Employee?$expand=address&$filter=fName eq 'Ryka' HTTP/1.1
+
+### Get Single Employee
+GET http://localhost:4004/EmployeeSRV/Employee/429fc5eb-d7eb-4824-85c4-221026c60ddb HTTP/1.1

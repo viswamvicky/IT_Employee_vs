@@ -1,0 +1,3 @@
+ID,createdAt,createdBy,modifiedAt,modifiedBy,fName,lName,gender,DOB,contractStarted,email,phone,address_ID
+1,45383.33333,Alice,45383.33333,Alice,John,Doe,Male,33008,45352,johndoe@example.com,123-456-7890,1
+2,45383.33403,Bob,45383.33403,Bob,Alice,Smith,Female,31340,45337,asmith@example.com,987-654-3210,2

@@ -1,10 +1,26 @@
-### Getting the Employee details
-# Get Employee Details
-# GET http://localhost:4004/EmployeeSRV/Employee HTTP/1.1
 
-# Get Employee Details along with address
-GET http://localhost:4004/EmployeeSRV/Employee?$expand=address HTTP/1.1
+###Get Employee Details
+ GET http://localhost:4004/EmployeeSRV/Employee HTTP/1.1
 
-# Delete the particular employee using Employee ID
-# DELETE http://localhost:4004/EmployeeSRV/Employee/bd26b2ab-6387-4e99-904f-ad728fa911e4 HTTP/1.1
+###Get Employee Address Details
+ GET http://localhost:4004/EmployeeSRV/Address HTTP/1.1
 
+###Get Employee Department Details
+ GET http://localhost:4004/EmployeeSRV/Department HTTP/1.1
+
+###Get Employee Designation Details
+ GET http://localhost:4004/EmployeeSRV/Designation HTTP/1.1
+
+###Get Employee Department Details
+ GET http://localhost:4004/EmployeeSRV/Salary HTTP/1.1
+
+
+
+###Get Employee Details along with address,salary,department,designation
+ GET http://localhost:4004/EmployeeSRV/Employee?$expand=address,salary,designation,department HTTP/1.1
+
+###Delete the particular employee using Employee ID
+DELETE http://localhost:4004/EmployeeSRV/Employee/tnrsaeaww0eggg4yraqfuf5c HTTP/1.1
+
+###
+GET http://localhost:4004/EmployeeSRV/Employee/tnrsaeaww0eggg4yraqfuf5c HTTP/1.1

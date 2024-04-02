@@ -20,7 +20,7 @@ entity Employee : cuid, managed {
   contractStarted : Date;
   email           : reuse.Email not null; // This Email has to follow the Format and shuld not be null
   phone           : reuse.PhoneNumber not null;
-  address         : Association to Address; 
+  address         : Composition of many Address on address.employee = $self;
 }
 
 entity Address : cuid {
@@ -29,4 +29,5 @@ entity Address : cuid {
   pincode  : Integer not null;
   street   : String;
   landmark : String;
+  employee : Association to Employee;
 }

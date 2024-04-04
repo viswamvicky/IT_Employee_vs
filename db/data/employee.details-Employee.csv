@@ -1,0 +1,3 @@
+ID,createdAt,createdBy,modifiedAt,modifiedBy,fName,lName,gender,DOB,contractStarted,email,phone
+mg227vz9o41kzai10yd4ab8j,2024-04-02,John Doe,2024-04-02,John Doe,Jane,Smith,Female,1990-05-15,2023-06-01,jane.smith@example.com,123-456-7890
+tnrsaeaww0eggg4yraqfuf5c,2024-04-02,John Doe,2024-04-02,John Doe,Michael,Jones,Male,1985-10-20,2023-05-15,michael.jones@example.com,987-654-3210
